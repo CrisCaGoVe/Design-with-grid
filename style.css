@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan2: hsl(179, 62%, 46%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--Light-Gray);
+  font-family: Karla;
+  min-height: 100%;
+  min-width: 100%;
+  font-size: 16px;
+}
+.container {
+  overflow: hidden;
+  border-radius: 7px;
+  margin: 0 1.5rem;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.container .top {
+  padding: 1.5rem 1.5rem;
+  background-color: white;
+}
+.container .top h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--Cyan);
+}
+.container .top h2 {
+  font-size: 16px;
+  margin: 19px 0;
+  color: var(--Bright-Yellow);
+}
+
+.container .top .top-paragraph {
+  color: var(--Grayish-Blue);
+  line-height: 25px;
+  font-size: 14px;
+}
+.container .medium {
+  padding: 1.5rem 1.5rem;
+  background-color: var(--Cyan);
+  max-width: 100%;
+  color: var(--Light-Gray);
+}
+.container .medium .card-price {
+  display: flex;
+  align-items: center;
+}
+.container .medium h2 {
+  font-size: 19px;
+  margin-bottom: 17px;
+}
+.container .medium h3 {
+  font-size: 40px;
+}
+.container .medium .price {
+  color: #7ae1de;
+  margin-left: 13px;
+}
+
+.container .medium .card-button {
+  margin-top: 30px;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  color: var(--Light-Gray);
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container .bottom {
+  padding: 1.5rem 1.5rem;
+  background-color: #4abebd;
+}
+.container .bottom h2 {
+  color: var(--Light-Gray);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.container .bottom .paragraph-bottom {
+  color: #b0ffff;
+  line-height: 25px;
+}
+.container .bottom .paragraph-bottom li {
+  list-style: none;
+}
+.attribution {
+  color: var(--Cyan);
+  font-family: Karla;
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    height: 530px;
+    width: 60%;
+  }
+  .container .top {
+    padding: 3% 20% 3% 5%;
+    height: 220px;
+  }
+  .container .top h1 {
+    margin-top: 10px;
+  }
+  .container .top h2 {
+    margin: 19px 0 14px 0;
+  }
+
+  .container .bottom-desktop {
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .container .medium {
+    padding: 3.5rem 2.5rem;
+    width: 50%;
+  }
+  .container .bottom {
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 40px;
+  }
+  .container .medium .price-descript {
+    margin-top: 10px;
+  }
+}
